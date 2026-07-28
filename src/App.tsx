@@ -136,8 +136,7 @@ export function App() {
         const socle = {
           historique,
           profil,
-          angle: tire.libelle,
-          consigneAngle: tire.consigne,
+          angleCle: tire.cle,
           exploration: reglages.exploration,
           terrain: reglages.terrain,
           journal: listeAntiRepetition(journalCourant),

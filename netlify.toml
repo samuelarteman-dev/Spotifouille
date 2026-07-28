@@ -5,6 +5,32 @@
 [functions]
   node_bundler = "esbuild"
 
+# En-têtes de sécurité. Sans CSP, un script hostile arrivé par une dépendance
+# compromise ou une extension aurait accès au jeton de rafraîchissement Spotify
+# rangé en localStorage. C'est la seule chose qui limiterait les dégâts.
+# Note sur 'unsafe-inline' dans style-src : Vite peut injecter du style en
+# ligne. À retirer après vérification en production. Jamais sur script-src.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.scdn.co https://*.scdn.co; connect-src 'self' https://api.spotify.com https://accounts.spotify.com; form-action 'none'; frame-ancestors 'none'; base-uri 'none'; object-src 'none'"
+    # La page /callback porte le code d'autorisation dans son URL et charge une
+    # feuille de style tierce. Autant ne rien transmettre du tout.
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Cross-Origin-Opener-Policy = "same-origin"
+
+# ATTENTION : bibliotheque.json est un actif statique, donc téléchargeable par
+# quiconque connaît l'URL. Il contient les 5 086 identifiants de la
+# bibliothèque. Le noindex empêche l'indexation, PAS l'accès direct.
+# Pour fermer réellement : protection par mot de passe du site, dans les
+# réglages Netlify. Voir la section « Données » de CLAUDE.md.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 # L'ordre compte : /api/* doit passer AVANT le catch-all /*.
 [[redirects]]
   from = "/api/*"

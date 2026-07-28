@@ -113,6 +113,9 @@ export interface Message {
 /** Erreur applicative avec un libellé déjà rédigé pour l'écran. */
 export class ErreurLisible extends Error {
   readonly detail: unknown
+  /** Vrai quand le serveur a rejeté l'octroi lui-même (400/401), et pas quand
+   *  il s'agit d'une panne réseau ou d'un 5xx passager. */
+  octroiInvalide = false
 
   constructor(message: string, detail?: unknown) {
     super(message)

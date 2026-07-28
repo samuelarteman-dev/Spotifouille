@@ -12,13 +12,15 @@
 
 import Anthropic from '@anthropic-ai/sdk'
 import type { Context } from '@netlify/functions'
-import { adresse, consommer, reponseTropDeRequetes } from '../lib/limite.mts'
+import { adresse, consommer, memeOrigine, reponseTropDeRequetes } from '../lib/limite.mts'
 import {
+  angleValide,
   blocEmpreinte,
   blocProfil,
   blocRelance,
   blocRole,
   blocSession,
+  LIMITE_ENTREE_JOURNAL,
   LIMITE_JOURNAL,
   LIMITE_MESSAGE,
   LIMITE_PROFIL,
@@ -26,6 +28,7 @@ import {
   MODELE_CONVERSATION,
   listeCourte,
   normaliserHistorique,
+  tenirDansLeBudget,
   texteCourt,
   type Tour,
 } from '../lib/prompt.mts'
@@ -41,6 +44,9 @@ function erreur(message: string, statut: number): Response {
 
 export default async (req: Request, context: Context): Promise<Response> => {
   if (req.method !== 'POST') return erreur('Méthode non autorisée.', 405)
+  // Sans ce contrôle, une page tierce fait payer la fouille par chacun de ses
+  // visiteurs, sur l'adresse IP du visiteur.
+  if (!memeOrigine(req)) return erreur('Origine non autorisée.', 403)
 
   const cle = process.env.ANTHROPIC_API_KEY
   if (!cle) return erreur('Le serveur n’a pas de clé Anthropic configurée.', 500)
@@ -61,14 +67,21 @@ export default async (req: Request, context: Context): Promise<Response> => {
   const relance = Array.isArray(charge.echecs) ? listeCourte(charge.echecs, 12) : []
   if (!message && !relance.length) return erreur('Message vide.', 400)
 
-  const angle = texteCourt(charge.angle, 120) || 'au fil de l’humeur'
-  const consigneAngle = texteCourt(charge.consigneAngle, 600)
+  // L'angle est reconstruit à partir de sa seule clé. Le client n'écrit pas
+  // dans le prompt système.
+  const { libelle: angle, consigne: consigneAngle } = angleValide(charge.angleCle)
   const explorationBrute = Number(charge.exploration)
   const exploration = Number.isFinite(explorationBrute)
     ? Math.min(100, Math.max(0, Math.round(explorationBrute)))
     : 45
   const terrain = charge.terrain === 'connu' ? 'connu' : 'incognita'
   const cible = charge.cible === 'album' ? 'album' : 'titres'
+
+  // Les plafonds unitaires ne suffisent pas : c'est leur somme qui fait le coût.
+  const { historique: tours, journal } = tenirDansLeBudget({
+    historique: normaliserHistorique(charge.historique),
+    journal: listeCourte(charge.journal, LIMITE_JOURNAL, LIMITE_ENTREE_JOURNAL),
+  })
 
   const systeme = [
     { type: 'text' as const, text: blocRole() },
@@ -92,15 +105,15 @@ export default async (req: Request, context: Context): Promise<Response> => {
         consigneAngle,
         exploration,
         terrain,
-        journal: listeCourte(charge.journal, LIMITE_JOURNAL),
-        topCourt: listeCourte(charge.topCourt, 20),
-        topLong: listeCourte(charge.topLong, 20),
+        journal,
+        topCourt: listeCourte(charge.topCourt, 20, LIMITE_ENTREE_JOURNAL),
+        topLong: listeCourte(charge.topLong, 20, LIMITE_ENTREE_JOURNAL),
         cible,
       }),
     },
   ]
 
-  const messages: Tour[] = normaliserHistorique(charge.historique)
+  const messages: Tour[] = tours
   messages.push({
     role: 'user',
     content: relance.length ? blocRelance(relance) : message,
@@ -155,7 +168,6 @@ export default async (req: Request, context: Context): Promise<Response> => {
       'Content-Type': 'text/plain; charset=utf-8',
       'Cache-Control': 'no-store',
       'X-Accel-Buffering': 'no',
-      'X-Debit-Restant': String(debit.restant),
     },
   })
 }

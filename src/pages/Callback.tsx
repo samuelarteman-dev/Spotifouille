@@ -35,6 +35,8 @@ export function Callback() {
         if (!annule) window.location.replace('/')
       })
       .catch((e: unknown) => {
+        // L'échange a échoué : le couple vérifieur/état ne resservira pas.
+        oublierVerifieur()
         if (!annule) setErreur(e instanceof Error ? e.message : 'L’échange du code a échoué.')
       })
     return () => {

@@ -14,8 +14,9 @@ export interface DemandeFouille {
   message: string
   historique: { role: 'user' | 'assistant'; content: string }[]
   profil: string
-  angle: string
-  consigneAngle: string
+  /** Seule la clé part au serveur : c'est lui qui reconstruit le libellé et la
+   *  consigne, sinon l'appelant écrirait dans le prompt système. */
+  angleCle: string
   exploration: number
   terrain: 'incognita' | 'connu'
   journal: string[]

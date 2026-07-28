@@ -70,7 +70,14 @@ async function poster(corps: URLSearchParams): Promise<ReponseJeton> {
   })
   if (!reponse.ok) {
     const detail = await reponse.text().catch(() => '')
-    throw new ErreurLisible(`Spotify a refusé la demande de jeton (${reponse.status}).`, detail)
+    const erreur = new ErreurLisible(
+      `Spotify a refusé la demande de jeton (${reponse.status}).`,
+      detail,
+    )
+    // Seul un 400 ou un 401 signifie que l'octroi lui-même est invalide. Un 500
+    // ou une coupure réseau ne doivent pas coûter la session.
+    erreur.octroiInvalide = reponse.status === 400 || reponse.status === 401
+    throw erreur
   }
   return (await reponse.json()) as ReponseJeton
 }
@@ -114,8 +121,11 @@ export async function rafraichir(): Promise<Jetons> {
       )
       return ecrireJetons(reponse, actuels.rafraichissement)
     } catch (e) {
-      // Un refus de rafraîchissement est définitif : la session est perdue.
-      effacerJetons()
+      // On n'efface que si Spotify a rejeté l'octroi. Une panne réseau ou un
+      // 5xx ne doit pas détruire le jeton de rafraîchissement : c'est le seul
+      // identifiant durable de l'application, et le reperdre impose de refaire
+      // tout le parcours OAuth.
+      if (e instanceof ErreurLisible && e.octroiInvalide) effacerJetons()
       throw e
     } finally {
       rafraichissementEnCours = null

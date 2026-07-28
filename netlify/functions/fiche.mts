@@ -14,7 +14,7 @@
 
 import Anthropic from '@anthropic-ai/sdk'
 import type { Context } from '@netlify/functions'
-import { adresse, consommer, reponseTropDeRequetes } from '../lib/limite.mts'
+import { adresse, consommer, memeOrigine, reponseTropDeRequetes } from '../lib/limite.mts'
 import { MAX_TOKENS_FICHE, MODELE_FICHE, texteCourt } from '../lib/prompt.mts'
 
 function json(charge: unknown, statut = 200): Response {
@@ -26,6 +26,7 @@ function json(charge: unknown, statut = 200): Response {
 
 export default async (req: Request, context: Context): Promise<Response> => {
   if (req.method !== 'POST') return json({ erreur: 'Méthode non autorisée.' }, 405)
+  if (!memeOrigine(req)) return json({ erreur: 'Origine non autorisée.' }, 403)
 
   const cle = process.env.ANTHROPIC_API_KEY
   if (!cle) return json({ erreur: 'Le serveur n’a pas de clé Anthropic configurée.' }, 500)

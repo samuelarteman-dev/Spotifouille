@@ -28,9 +28,12 @@ export function Carte({ trouvaille, verdict, dansLaPlatine, onReagir, onBasculer
   const image = pochette(piste)
   const annee = candidat.annee ?? anneeDe(piste)
   const titrePrincipal = cible === 'album' ? (piste.album?.name ?? piste.name) : piste.name
+  // L'identifiant vient de Spotify, mais il finit dans un href : on vérifie sa
+  // forme plutôt que de faire confiance.
+  const idAlbum = /^[A-Za-z0-9]{22}$/.test(piste.album?.id ?? '') ? piste.album.id : ''
   const lien =
-    cible === 'album' && piste.album?.id
-      ? `https://open.spotify.com/album/${piste.album.id}`
+    cible === 'album' && idAlbum
+      ? `https://open.spotify.com/album/${idAlbum}`
       : piste.external_urls.spotify
 
   async function basculerFiche() {

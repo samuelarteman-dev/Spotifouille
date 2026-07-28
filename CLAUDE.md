@@ -56,6 +56,9 @@ l'existence des morceaux et à écrire les playlists.
 - `public/data/bibliotheque.json` : 259 Ko, les 5 086 identifiants et 4 774 clés
   « artiste::titre » normalisées. Sert au mode Terra incognita côté navigateur.
   Chargé par `fetch`, jamais importé dans le bundle, JAMAIS envoyé à l'API Anthropic.
+  **MAIS c'est un actif statique : quiconque connaît l'URL le télécharge.**
+  Le `X-Robots-Tag` de `netlify.toml` empêche l'indexation, pas l'accès direct.
+  Pour fermer : protection par mot de passe du site dans les réglages Netlify.
 - Les genres du CSV sont en français (« rap français »), l'API Spotify répond en
   anglais (« french hip hop »). Dis-le à Claude dans le prompt, ne construis pas
   de table de correspondance.
@@ -66,6 +69,20 @@ l'existence des morceaux et à écrire les playlists.
 
 - SÉCURITÉ : `ANTHROPIC_API_KEY` jamais côté navigateur, jamais de préfixe `VITE_`.
 - Les jetons Spotify restent dans le navigateur, jamais transmis à la Function.
+- Le compteur de débit passe par une écriture conditionnelle (`onlyIfMatch` /
+  `onlyIfNew`). Une séquence lire-incrémenter-écrire ne tient pas : N requêtes
+  simultanées lisent la même valeur et le compteur n'avance que d'un par salve.
+- Le plafond global quotidien est le seul qui borne vraiment la facture. Un
+  préfixe IPv6 /64 donne un nombre illimité de quotas par IP.
+- Les trois fonctions vérifient `Origin`. Sans ça, une page tierce fait payer
+  la fouille par chacun de ses visiteurs, sur l'IP du visiteur.
+- Le client n'envoie que la CLÉ d'angle. Le libellé et la consigne atterrissent
+  dans la position la plus autoritaire du prompt système ; les laisser venir du
+  navigateur, c'est lui laisser réécrire les instructions du modèle.
+- Ne lance jamais `npm audit fix --force` : il rétrograde `@netlify/blobs` en
+  10.1.0 et supprime les écritures conditionnelles. Passe par `overrides`.
+- `rafraichir()` n'efface les jetons que sur un 400 ou un 401. Un 5xx ou une
+  coupure réseau ne doit pas détruire la session.
 - Aucun titre n'arrive à l'écran sans avoir été résolu par la recherche Spotify.
 - Jamais de `dangerouslySetInnerHTML`. Les noms d'artistes contiennent n'importe quoi.
 - Pochettes jamais recadrées, jamais recouvertes. Coins 4px mobile, 8px desktop.
