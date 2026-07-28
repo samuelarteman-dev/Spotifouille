@@ -1,0 +1,1185 @@
+{
+  "genere_le": "2026-07-28",
+  "volume_total": 5086,
+  "artistes_uniques": 3287,
+  "artistes_recurrents": [
+    {
+      "nom": "Bushido",
+      "titres": 147,
+      "genres": [
+        "hip-hop allemand",
+        "pop allemande",
+        "hip-hop turc"
+      ]
+    },
+    {
+      "nom": "Booba",
+      "titres": 106,
+      "genres": [
+        "pop urbaine",
+        "r&b français",
+        "rap français"
+      ]
+    },
+    {
+      "nom": "Jebroer",
+      "titres": 75,
+      "genres": [
+        "frenchcore",
+        "gabber",
+        "hardcore"
+      ]
+    },
+    {
+      "nom": "Médine",
+      "titres": 69,
+      "genres": [
+        "rap français",
+        "r&b français",
+        "pop urbaine"
+      ]
+    },
+    {
+      "nom": "Jean-Baptiste Lully",
+      "titres": 60,
+      "genres": [
+        "baroque",
+        "musique ancienne",
+        "renaissance"
+      ]
+    },
+    {
+      "nom": "Nessbeal",
+      "titres": 56,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "zouk"
+      ]
+    },
+    {
+      "nom": "Orelsan",
+      "titres": 46,
+      "genres": [
+        "rap français",
+        "pop française",
+        "pop urbaine"
+      ]
+    },
+    {
+      "nom": "Johnny Hallyday",
+      "titres": 44,
+      "genres": [
+        "chanson",
+        "pop française",
+        "variété française"
+      ]
+    },
+    {
+      "nom": "Stromae",
+      "titres": 39,
+      "genres": [
+        "pop française",
+        "rap français",
+        "bande originale"
+      ]
+    },
+    {
+      "nom": "Sefyu",
+      "titres": 36,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "pop urbaine"
+      ]
+    },
+    {
+      "nom": "La Fouine",
+      "titres": 35,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "pop urbaine"
+      ]
+    },
+    {
+      "nom": "Damso",
+      "titres": 34,
+      "genres": [
+        "pop urbaine",
+        "r&b français",
+        "rap français"
+      ]
+    },
+    {
+      "nom": "Kery James",
+      "titres": 33,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "pop urbaine"
+      ]
+    },
+    {
+      "nom": "Dr. Peacock",
+      "titres": 31,
+      "genres": [
+        "frenchcore",
+        "gabber",
+        "hardcore"
+      ]
+    },
+    {
+      "nom": "Roméo Elvis",
+      "titres": 31,
+      "genres": [
+        "pop française",
+        "rap français",
+        "variété française"
+      ]
+    },
+    {
+      "nom": "Rim'K",
+      "titres": 30,
+      "genres": [
+        "pop urbaine",
+        "rap français",
+        "r&b français"
+      ]
+    },
+    {
+      "nom": "Sido",
+      "titres": 28,
+      "genres": [
+        "hip-hop allemand",
+        "pop allemande",
+        "indie allemande"
+      ]
+    },
+    {
+      "nom": "Charles Aznavour",
+      "titres": 24,
+      "genres": [
+        "chanson",
+        "jazz français",
+        "variété française"
+      ]
+    },
+    {
+      "nom": "Soprano",
+      "titres": 23,
+      "genres": [
+        "chanson",
+        "pop française",
+        "pop urbaine"
+      ]
+    },
+    {
+      "nom": "David Guetta",
+      "titres": 22,
+      "genres": [
+        "edm",
+        "électro house",
+        "big room"
+      ]
+    },
+    {
+      "nom": "Dalida",
+      "titres": 21,
+      "genres": [
+        "chanson",
+        "variété française",
+        "house mélodique"
+      ]
+    },
+    {
+      "nom": "Kamelancien",
+      "titres": 21,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "pop française"
+      ]
+    },
+    {
+      "nom": "Prima Nocta",
+      "titres": 21,
+      "genres": [
+        "metal folk",
+        "musique celtique",
+        "musique médiévale"
+      ]
+    },
+    {
+      "nom": "Rohff",
+      "titres": 21,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "pop française"
+      ]
+    },
+    {
+      "nom": "Angèle",
+      "titres": 20,
+      "genres": [
+        "chanson",
+        "pop française",
+        "pop française indie"
+      ]
+    },
+    {
+      "nom": "Jean-Jacques Goldman",
+      "titres": 20,
+      "genres": [
+        "chanson",
+        "house française",
+        "pop française"
+      ]
+    },
+    {
+      "nom": "Marcin Przybyłowicz",
+      "titres": 20,
+      "genres": [
+        "b.o.",
+        "musique médiévale",
+        "metal folk"
+      ]
+    },
+    {
+      "nom": "Nekfeu",
+      "titres": 20,
+      "genres": [
+        "rap français",
+        "pop urbaine",
+        "chanson"
+      ]
+    },
+    {
+      "nom": "Alpha Wann",
+      "titres": 19,
+      "genres": [
+        "rap français",
+        "drill",
+        "rap marocain"
+      ]
+    },
+    {
+      "nom": "Trinix Remix",
+      "titres": 19,
+      "genres": [
+        "afrosoul",
+        "cumbia",
+        "folk latino"
+      ]
+    },
+    {
+      "nom": "Akon",
+      "titres": 18,
+      "genres": [
+        "hip-hop old school",
+        "pop urbaine",
+        "r&b français"
+      ]
+    },
+    {
+      "nom": "Diam's",
+      "titres": 18,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "rap québécois"
+      ]
+    },
+    {
+      "nom": "Eminem",
+      "titres": 18,
+      "genres": [
+        "hip-hop",
+        "rap",
+        "g-funk"
+      ]
+    },
+    {
+      "nom": "Frenetik",
+      "titres": 18,
+      "genres": [
+        "rap français",
+        "drill",
+        "pop marocaine"
+      ]
+    },
+    {
+      "nom": "Rihanna",
+      "titres": 18,
+      "genres": [
+        "rap",
+        "edm",
+        "hip-hop"
+      ]
+    },
+    {
+      "nom": "Vald",
+      "titres": 18,
+      "genres": [
+        "rap français",
+        "pop urbaine",
+        "chanson"
+      ]
+    },
+    {
+      "nom": "50 Cent",
+      "titres": 17,
+      "genres": [
+        "hip-hop east coast",
+        "hip-hop old school",
+        "gangster rap"
+      ]
+    },
+    {
+      "nom": "Black Eyed Peas",
+      "titres": 17,
+      "genres": [
+        "bossa nova",
+        "jazz brésilien",
+        "latino"
+      ]
+    },
+    {
+      "nom": "disiz",
+      "titres": 17,
+      "genres": [
+        "rap français",
+        "pop urbaine",
+        "r&b français"
+      ]
+    },
+    {
+      "nom": "Annie Cordy",
+      "titres": 16,
+      "genres": [
+        "chanson",
+        "variété française"
+      ]
+    },
+    {
+      "nom": "El Matador",
+      "titres": 16,
+      "genres": [
+        "rap français",
+        "r&b français",
+        "pop marocaine"
+      ]
+    },
+    {
+      "nom": "Florent Pagny",
+      "titres": 16,
+      "genres": [
+        "chanson",
+        "pop française",
+        "variété française"
+      ]
+    },
+    {
+      "nom": "Adam Sporka",
+      "titres": 15,
+      "genres": [
+        "musique médiévale"
+      ]
+    },
+    {
+      "nom": "Céline Dion",
+      "titres": 15,
+      "genres": [
+        "variété française",
+        "chanson",
+        "chanson québécoise"
+      ]
+    },
+    {
+      "nom": "Jan Valta",
+      "titres": 15,
+      "genres": [
+        "musique médiévale"
+      ]
+    },
+    {
+      "nom": "Ninho",
+      "titres": 15,
+      "genres": [
+        "pop urbaine",
+        "rap français",
+        "r&b français"
+      ]
+    },
+    {
+      "nom": "Zwangere Guy",
+      "titres": 15,
+      "genres": [
+        "rap français",
+        "boom bap",
+        "freestyle"
+      ]
+    },
+    {
+      "nom": "Claude François",
+      "titres": 14,
+      "genres": [
+        "chanson",
+        "variété française"
+      ]
+    },
+    {
+      "nom": "Niska",
+      "titres": 14,
+      "genres": [
+        "pop urbaine",
+        "r&b français",
+        "rap français"
+      ]
+    },
+    {
+      "nom": "PLK",
+      "titres": 14,
+      "genres": [
+        "pop urbaine",
+        "rap français",
+        "r&b français"
+      ]
+    },
+    {
+      "nom": "Ronnie Flex",
+      "titres": 14,
+      "genres": [
+        "pop néerlandaise",
+        "frenchcore",
+        "gabber"
+      ]
+    },
+    {
+      "nom": "Sinik",
+      "titres": 14,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "rap québécois"
+      ]
+    },
+    {
+      "nom": "Snoop Dogg",
+      "titres": 14,
+      "genres": [
+        "g-funk",
+        "gangster rap",
+        "hip-hop"
+      ]
+    },
+    {
+      "nom": "The Partysquad",
+      "titres": 14,
+      "genres": [
+        "hardstyle",
+        "moombahton",
+        "techno hardcore"
+      ]
+    },
+    {
+      "nom": "Bear McCreary",
+      "titres": 13,
+      "genres": [
+        "b.o.",
+        "musique celtique"
+      ]
+    },
+    {
+      "nom": "GIMS",
+      "titres": 13,
+      "genres": [
+        "pop française",
+        "pop urbaine",
+        "r&b français"
+      ]
+    },
+    {
+      "nom": "Jessica Curry",
+      "titres": 13,
+      "genres": [
+        "crossover classique"
+      ]
+    },
+    {
+      "nom": "Khaled",
+      "titres": 13,
+      "genres": [
+        "raï",
+        "pop urbaine",
+        "rap français"
+      ]
+    },
+    {
+      "nom": "Mr. Polska",
+      "titres": 13,
+      "genres": [
+        "frenchcore",
+        "gabber",
+        "hardcore"
+      ]
+    },
+    {
+      "nom": "Sexion d'Assaut",
+      "titres": 13,
+      "genres": [
+        "r&b français",
+        "rap français"
+      ]
+    },
+    {
+      "nom": "SNIPER",
+      "titres": 13,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "raï"
+      ]
+    },
+    {
+      "nom": "Zaho",
+      "titres": 13,
+      "genres": [
+        "pop française",
+        "pop urbaine",
+        "r&b français"
+      ]
+    },
+    {
+      "nom": "badmómzjay",
+      "titres": 12,
+      "genres": [
+        "hip-hop allemand"
+      ]
+    },
+    {
+      "nom": "Chœur De Chambre De Namur",
+      "titres": 12,
+      "genres": [
+        "baroque",
+        "chant choral",
+        "musique ancienne"
+      ]
+    },
+    {
+      "nom": "France Gall",
+      "titres": 12,
+      "genres": [
+        "chanson",
+        "house française",
+        "pop française"
+      ]
+    },
+    {
+      "nom": "James Morgan",
+      "titres": 12,
+      "genres": [
+        "crossover classique"
+      ]
+    },
+    {
+      "nom": "Les Arts Florissants",
+      "titres": 12,
+      "genres": [
+        "baroque",
+        "classique",
+        "musique ancienne"
+      ]
+    },
+    {
+      "nom": "London Voices",
+      "titres": 12,
+      "genres": [
+        "crossover classique"
+      ]
+    },
+    {
+      "nom": "Metro Voices",
+      "titres": 12,
+      "genres": [
+        "crossover classique"
+      ]
+    },
+    {
+      "nom": "Michel Sardou",
+      "titres": 12,
+      "genres": [
+        "chanson",
+        "pop française",
+        "variété française"
+      ]
+    },
+    {
+      "nom": "Nicki Minaj",
+      "titres": 12,
+      "genres": [
+        "edm",
+        "hip-hop",
+        "r&b"
+      ]
+    },
+    {
+      "nom": "PNL",
+      "titres": 12,
+      "genres": [
+        "pop urbaine",
+        "rap français",
+        "cloud rap"
+      ]
+    },
+    {
+      "nom": "Sean Paul",
+      "titres": 12,
+      "genres": [
+        "dancehall",
+        "hip-hop east coast",
+        "latino"
+      ]
+    },
+    {
+      "nom": "Shakira",
+      "titres": 12,
+      "genres": [
+        "pop latino"
+      ]
+    },
+    {
+      "nom": "The Newton Brothers",
+      "titres": 12,
+      "genres": [
+        "b.o."
+      ]
+    },
+    {
+      "nom": "William Christie",
+      "titres": 12,
+      "genres": [
+        "baroque",
+        "classique",
+        "musique ancienne"
+      ]
+    },
+    {
+      "nom": "113",
+      "titres": 11,
+      "genres": [
+        "r&b français",
+        "rap français",
+        "raï"
+      ]
+    },
+    {
+      "nom": "Acus Vacuum",
+      "titres": 11,
+      "genres": [
+        "metal folk",
+        "metal médiéval",
+        "musique celtique"
+      ]
+    },
+    {
+      "nom": "Alan Walker",
+      "titres": 11,
+      "genres": [
+        "b.o.",
+        "bande originale",
+        "pop norvégienne"
+      ]
+    },
+    {
+      "nom": "Bigflo & Oli",
+      "titres": 11,
+      "genres": [
+        "chanson",
+        "pop française",
+        "rap français"
+      ]
+    }
+  ],
+  "genres_dominants": [
+    {
+      "nom": "rap français",
+      "part": 0.21
+    },
+    {
+      "nom": "variété française",
+      "part": 0.157
+    },
+    {
+      "nom": "chanson",
+      "part": 0.148
+    },
+    {
+      "nom": "pop française",
+      "part": 0.128
+    },
+    {
+      "nom": "r&b français",
+      "part": 0.122
+    },
+    {
+      "nom": "pop urbaine",
+      "part": 0.076
+    },
+    {
+      "nom": "hip-hop allemand",
+      "part": 0.05
+    },
+    {
+      "nom": "house française",
+      "part": 0.04
+    },
+    {
+      "nom": "hardstyle",
+      "part": 0.03
+    },
+    {
+      "nom": "musique médiévale",
+      "part": 0.03
+    },
+    {
+      "nom": "frenchcore",
+      "part": 0.026
+    },
+    {
+      "nom": "raï",
+      "part": 0.026
+    },
+    {
+      "nom": "hardcore",
+      "part": 0.026
+    },
+    {
+      "nom": "techno hardcore",
+      "part": 0.024
+    },
+    {
+      "nom": "baroque",
+      "part": 0.023
+    },
+    {
+      "nom": "b.o.",
+      "part": 0.022
+    },
+    {
+      "nom": "musique ancienne",
+      "part": 0.022
+    },
+    {
+      "nom": "gabber",
+      "part": 0.022
+    },
+    {
+      "nom": "musique celtique",
+      "part": 0.021
+    },
+    {
+      "nom": "eurodance",
+      "part": 0.02
+    },
+    {
+      "nom": "classique",
+      "part": 0.019
+    },
+    {
+      "nom": "renaissance",
+      "part": 0.018
+    },
+    {
+      "nom": "opéra",
+      "part": 0.017
+    },
+    {
+      "nom": "edm",
+      "part": 0.017
+    },
+    {
+      "nom": "disco",
+      "part": 0.016
+    },
+    {
+      "nom": "hip-hop",
+      "part": 0.014
+    },
+    {
+      "nom": "rap",
+      "part": 0.013
+    },
+    {
+      "nom": "pop marocaine",
+      "part": 0.013
+    },
+    {
+      "nom": "big room",
+      "part": 0.012
+    },
+    {
+      "nom": "pop allemande",
+      "part": 0.012
+    },
+    {
+      "nom": "metal folk",
+      "part": 0.012
+    },
+    {
+      "nom": "chant grégorien",
+      "part": 0.01
+    },
+    {
+      "nom": "hip-hop east coast",
+      "part": 0.01
+    },
+    {
+      "nom": "jazz français",
+      "part": 0.01
+    },
+    {
+      "nom": "pop néerlandaise",
+      "part": 0.01
+    },
+    {
+      "nom": "hip-hop old school",
+      "part": 0.01
+    },
+    {
+      "nom": "schlager",
+      "part": 0.01
+    },
+    {
+      "nom": "chant choral",
+      "part": 0.009
+    },
+    {
+      "nom": "rock celtique",
+      "part": 0.009
+    },
+    {
+      "nom": "techno",
+      "part": 0.009
+    }
+  ],
+  "labels_recurrents": [
+    {
+      "nom": "Universal Music Group",
+      "titres": 187
+    },
+    {
+      "nom": "Parlophone (France)",
+      "titres": 138
+    },
+    {
+      "nom": "Columbia",
+      "titres": 132
+    },
+    {
+      "nom": "Universal Music Division Capitol Music France",
+      "titres": 104
+    },
+    {
+      "nom": "Universal Music Division Barclay",
+      "titres": 95
+    },
+    {
+      "nom": "Universal Music Division Mercury Records",
+      "titres": 69
+    },
+    {
+      "nom": "Jive Epic",
+      "titres": 66
+    },
+    {
+      "nom": "Universal Music",
+      "titres": 61
+    },
+    {
+      "nom": "Universal Music Distribution Deal",
+      "titres": 60
+    },
+    {
+      "nom": "Epic",
+      "titres": 51
+    },
+    {
+      "nom": "Because Music",
+      "titres": 50
+    },
+    {
+      "nom": "Warner (France)",
+      "titres": 50
+    },
+    {
+      "nom": "ersguterjunge",
+      "titres": 43
+    },
+    {
+      "nom": "Din records",
+      "titres": 39
+    },
+    {
+      "nom": "RCA Records Label",
+      "titres": 38
+    },
+    {
+      "nom": "ersguterjunge/iGroove",
+      "titres": 36
+    },
+    {
+      "nom": "Sony Classical",
+      "titres": 35
+    },
+    {
+      "nom": "Sony Music/Bushido",
+      "titres": 35
+    },
+    {
+      "nom": "Jive",
+      "titres": 32
+    },
+    {
+      "nom": "Parlophone UK",
+      "titres": 32
+    },
+    {
+      "nom": "Universal Music Division Virgin Records",
+      "titres": 32
+    },
+    {
+      "nom": "Universal Music Division Polydor France",
+      "titres": 31
+    },
+    {
+      "nom": "Parlophone France",
+      "titres": 30
+    },
+    {
+      "nom": "CD PROJEKT RED",
+      "titres": 28
+    },
+    {
+      "nom": "Universal Music Division Label Panthéon",
+      "titres": 27
+    },
+    {
+      "nom": "Top Notch Music BV",
+      "titres": 25
+    },
+    {
+      "nom": "Wagram Music / 3ème Bureau",
+      "titres": 25
+    },
+    {
+      "nom": "Atlantic Records",
+      "titres": 23
+    },
+    {
+      "nom": "ROQ 'N Rolla Music",
+      "titres": 23
+    },
+    {
+      "nom": "Universal Music Division Island Def Jam",
+      "titres": 23
+    }
+  ],
+  "repartition_decennies": {
+    "1950": 0.001,
+    "1960": 0.011,
+    "1970": 0.029,
+    "1980": 0.04,
+    "1990": 0.074,
+    "2000": 0.273,
+    "2010": 0.384,
+    "2020": 0.188
+  },
+  "indices_linguistiques": {
+    "note": "approximatif, deduit des genres",
+    "fr": 0.389,
+    "de": 0.056,
+    "ar": 0.03,
+    "nl": 0.022,
+    "es": 0.015,
+    "it": 0.01,
+    "uk": 0.003,
+    "indetermine": 0.497
+  },
+  "rythme_ajouts": {
+    "2018": 634,
+    "2019": 134,
+    "2020": 277,
+    "2021": 389,
+    "2022": 509,
+    "2023": 174,
+    "2024": 290,
+    "2025": 1957,
+    "2026": 722
+  },
+  "titres_signature": [
+    "113 — Tonton du bled",
+    "Booba — Mauvais garçon",
+    "Bushido — Die Art, wie wir leben (feat. Booba)",
+    "Suprême NTM — Laisse pas traîner ton fils",
+    "Alliance Ethnik — Respect (feat. Vinia Mojica)",
+    "Saian Supa Crew — Angela",
+    "Dalida — Histoire d'un amour",
+    "Johnny Hallyday — Souvenirs, souvenirs",
+    "Bourvil — Salade de fruits",
+    "Fernandel — Félice Aussi",
+    "Charles Aznavour — Je meurs de toi",
+    "Danyel Gerard — Butterfly",
+    "Salvatore Adamo — La mia vita",
+    "Arno — Putain putain - Remix",
+    "Frank Michael — Écouter les femmes",
+    "RIDSA — Santa Maria",
+    "Stromae — Up Saw Liz",
+    "Alizée — J'en ai marre !",
+    "Isabelle Pierre — Le temps est bon",
+    "Ilona Mitrecey — C'est les vacances (version originale)",
+    "Khaled — Benthi",
+    "Aya Nakamura — Pookie",
+    "Idir — Sous le ciel de Marseille (feat. Kenza Farah)",
+    "Dr. Yaro — Minimum ça",
+    "ZVdu17 — Hakim Ziyech",
+    "K-Style — Soleil Bleu",
+    "Moha K — Vroum Vroum",
+    "badmómzjay — Haus im Meer (Intro)",
+    "Daft Punk — Da Funk",
+    "DJ Sammy — Heaven",
+    "Jean-Baptiste Lully — Alceste, LWV 50: La Fête Infernale - 1er Air (1674)",
+    "ascendant vierge — Faire et refaire",
+    "Mohamed Lamine — Gaou à Oran (feat. Magic System & 113)",
+    "Papi Jumper — Le sanglier",
+    "Antonio Vivaldi — The Four Seasons: Summer, Violin Concerto in G Minor, RV 315, Op. 8 No. 2: III. Presto",
+    "James Horner — For The Love Of A Princess",
+    "Traditional — God Save The Queen (British National Anthem 1952-2022)",
+    "Joost — Europapa",
+    "The Pogues — Fairytale of New York (feat. Kirsty MacColl)",
+    "Modern Talking — Cheri Cheri Lady",
+    "Freeman - Khaled - K-Rhyme Le Roi — Bladi",
+    "The Royal Australian Airforce Central Band — Belgique. \"La Brabançonne\"",
+    "Jean-Jacques Goldman — Envole-moi",
+    "Animus — Misanthropie",
+    "Jebroer — Marathon",
+    "Prima Nocta — Timatanga Hou",
+    "Boney M. — Ma Baker - Radio Edit",
+    "François Couperin — Troisième leçon de ténèbres à deux voix: Jerusalem, convertere ad Dominum",
+    "Michael Giacchino — Operation Market Garden",
+    "Armin van Buuren — Communication",
+    "Bee Gees — How Deep Is Your Love",
+    "Diddy — Satisfy You",
+    "Dj Bilal — Jbel Wahran جبال وهران - Remix",
+    "Yelle — Je veux te voir",
+    "Het Goede Doel — Belgie ... (Is Er Leven Op Pluto ...)",
+    "The Rolling Stones — Paint It, Black",
+    "Gaël Faye — Chalouper",
+    "Nana Mouskouri — Muss I Denn",
+    "Vitalic — Rave Against the System",
+    "Depeche Mode — Just Can't Get Enough"
+  ],
+  "titres_de_marge": [
+    "Rebel — Black Pearl (He's a Pirate) - Radio Edit",
+    "Yves Duteil — Prendre un enfant",
+    "2TH — C'est la vie",
+    "R3HAB — All Around The World (La La La)",
+    "Mathame — Skywalking",
+    "Yazoo — Don't Go",
+    "Deutscher Schlager — So a schöner Tag (Fliegerlied)",
+    "Barbara Pravi — Voilà",
+    "Rose Royce — Car Wash",
+    "Modjo — Lady - Hear Me Tonight",
+    "Tescao — Magical State",
+    "Franz Schubert — Salve regina in B-Flat Major, D. 386",
+    "Wardruna — Andvevarljod",
+    "Takfarinas — Zaama Zaama",
+    "Claude — C'est La Vie",
+    "KISS — I Was Made For Lovin' You",
+    "Mental Theo — Koning van het Feest",
+    "Katja Krasavice — Sex Tape",
+    "The Sidh — Shake That Bagpipe",
+    "Slaï — La dernière danse (Ne rentre pas chez toi ce soir) - Radio Edit",
+    "Niels Van Gogh — Pulverturm - Radio Edit 1",
+    "Chorale de la Maison des Etudiants Catholiques de Lyon — Marie: Je vous salue Marie (V 15)",
+    "Béla Bartók — Romanian Folk Dances, Sz 56: III. Pe-loc - Andante",
+    "DVBBS — Tsunami",
+    "Curtis Mayfield — Move on Up - Single Edit",
+    "Andy Williams — The First Noël",
+    "Musical Youth — Pass The Dutchie",
+    "Mariana BO — Cantus",
+    "Riton — Turn Me On (feat. Vula)",
+    "Safri Duo — Samb-Adagio"
+  ],
+  "profil_sonore": {
+    "note": "valeurs figées dans l export, l API ne les fournit plus",
+    "energie": {
+      "q1": 0.56,
+      "median": 0.71,
+      "q3": 0.84
+    },
+    "danse": {
+      "q1": 0.52,
+      "median": 0.65,
+      "q3": 0.75
+    },
+    "valence": {
+      "q1": 0.33,
+      "median": 0.54,
+      "q3": 0.74
+    },
+    "tempo": {
+      "q1": 97,
+      "median": 120,
+      "q3": 136
+    },
+    "acoustique": {
+      "q1": 0.04,
+      "median": 0.15,
+      "q3": 0.41
+    },
+    "parole": {
+      "q1": 0.04,
+      "median": 0.06,
+      "q3": 0.18
+    },
+    "par_decennie": {
+      "1960": {
+        "energie": 0.48,
+        "valence": 0.63,
+        "tempo": 118
+      },
+      "1970": {
+        "energie": 0.64,
+        "valence": 0.71,
+        "tempo": 122
+      },
+      "1980": {
+        "energie": 0.66,
+        "valence": 0.75,
+        "tempo": 119
+      },
+      "1990": {
+        "energie": 0.62,
+        "valence": 0.65,
+        "tempo": 120
+      },
+      "2000": {
+        "energie": 0.74,
+        "valence": 0.6,
+        "tempo": 111
+      },
+      "2010": {
+        "energie": 0.73,
+        "valence": 0.48,
+        "tempo": 122
+      },
+      "2020": {
+        "energie": 0.69,
+        "valence": 0.41,
+        "tempo": 126
+      }
+    }
+  }
+}
