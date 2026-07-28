@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/* Tailwind v4 : toute la configuration vit ici. Pas de tailwind.config.js. */
+@theme {
+  --color-fond: #0b0b0c;
+  --color-surface: #141416;
+  --color-surface-haute: #1d1d20;
+  --color-texte: #f2f0eb;
+  --color-texte-doux: #9c9a94;
+  --color-accent: #ff7a18;
+  --color-accent-clair: #ffb300;
+  --color-spotify-vert: #1db954;
+
+  --font-titre: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-ui: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-carte: 8px;
+  --radius-pochette: 4px;
+
+  --default-transition-duration: 175ms;
+  --default-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    background-color: var(--color-fond);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--color-fond);
+    color: var(--color-texte);
+    font-family: var(--font-ui);
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-titre);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  /* Cible tactile de 44 px minimum, exigée sur mobile. */
+  button,
+  a[role="button"],
+  input[type="range"] {
+    touch-action: manipulation;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-clair);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-fond);
+  }
+
+  /* Barre de défilement discrète, dans la palette. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-surface-haute) transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility pochette {
+  /* Règle de licence Spotify : jamais recadrée, jamais recouverte.
+     Coins 4 px sur mobile, 8 px à partir de 768 px. */
+  border-radius: var(--radius-pochette);
+  object-fit: contain;
+  background-color: var(--color-surface-haute);
+}
+
+@media (min-width: 768px) {
+  .pochette {
+    border-radius: 8px;
+  }
+}
+
+@utility surface-carte {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-carte);
+}
+
+/* Apparition des cartes : opacité et position uniquement. */
+@keyframes remontee {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility remontee {
+  animation: remontee 200ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}

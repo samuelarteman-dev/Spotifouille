@@ -92,7 +92,7 @@ function normaliserAffichage(s) {
     .replace(/[‐‑‒–—―−⁃]/g, '-')
     .replace(/[“”„«»]/g, '"')
     .replace(/…/g, '...')
-    .replace(/[   ​‌‍﻿]/g, ' ')
+    .replace(/\u00A0|\u202F|\u2007|\u200B|\u200C|\u200D|\uFEFF/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 }

@@ -1,0 +1,208 @@
+{
+  "_note": "Réponses de GET /v1/search?type=track, réduites aux champs que Spotifouille lit. Les identifiants, noms d'artistes et graphies proviennent de vraies réponses de l'API Spotify, relevées le 2026-07-28. Sert au mode hors ligne de scripts/test-resolution.mts.",
+
+  "track:\"Poney Part 1\" artist:\"Vitalic\"": [
+    {
+      "id": "6ts1l6eCcuCqHeNtjY0o9u",
+      "uri": "spotify:track:6ts1l6eCcuCqHeNtjY0o9u",
+      "name": "Poney Part 1",
+      "artists": [{ "id": "4M84umUNRbZy1mJleyyRM9", "name": "Vitalic" }],
+      "album": {
+        "id": "1kMSEjmYPZoZTaEfnPzOSg",
+        "name": "OK Cowboy",
+        "release_date": "2005-04-25",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b27399ef2aa79460e3a3267634ac", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 323000,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/6ts1l6eCcuCqHeNtjY0o9u" }
+    },
+    {
+      "id": "42DFgZk6VQsqpe0WyU9YBr",
+      "uri": "spotify:track:42DFgZk6VQsqpe0WyU9YBr",
+      "name": "Poney Part 2",
+      "artists": [{ "id": "4M84umUNRbZy1mJleyyRM9", "name": "Vitalic" }],
+      "album": {
+        "id": "1kMSEjmYPZoZTaEfnPzOSg",
+        "name": "OK Cowboy",
+        "release_date": "2005-04-25",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b27399ef2aa79460e3a3267634ac", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 312546,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/42DFgZk6VQsqpe0WyU9YBr" }
+    }
+  ],
+
+  "track:\"Laisse pas trainer ton fils\" artist:\"Supreme NTM\"": [],
+  "Supreme NTM Laisse pas trainer ton fils": [
+    {
+      "id": "2lWYxQ0fFp7QSZt21wIdih",
+      "uri": "spotify:track:2lWYxQ0fFp7QSZt21wIdih",
+      "name": "Laisse pas traîner ton fils - Live à Paris-Bercy 2008",
+      "artists": [{ "id": "1SXUCrHFXjPPRQzk0FfPvT", "name": "Suprême NTM" }],
+      "album": {
+        "id": "0RNxWy0PC3AyH4ThH3aGK6",
+        "name": "On est encore là (Live)",
+        "release_date": "2008-11-24",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b2737c6a0379e908a01b5eeea8bd", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 257733,
+      "explicit": true,
+      "external_urls": { "spotify": "https://open.spotify.com/track/2lWYxQ0fFp7QSZt21wIdih" }
+    },
+    {
+      "id": "19wTIVLYwubMX8XZppB6lH",
+      "uri": "spotify:track:19wTIVLYwubMX8XZppB6lH",
+      "name": "Laisse pas traîner ton fils",
+      "artists": [{ "id": "1SXUCrHFXjPPRQzk0FfPvT", "name": "Suprême NTM" }],
+      "album": {
+        "id": "5S6BLQZfDPvbBUqPDXyzXW",
+        "name": "Suprême NTM",
+        "release_date": "1998-03-17",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b273b0af6c9d26487cf55ba0efd6", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 238040,
+      "explicit": true,
+      "external_urls": { "spotify": "https://open.spotify.com/track/19wTIVLYwubMX8XZppB6lH" }
+    }
+  ],
+
+  "track:\"Marche pour la cérémonie des Turcs\" artist:\"Jean-Baptiste Lully\"": [
+    {
+      "id": "4pycU7sdvWiEI98CzE62P1",
+      "uri": "spotify:track:4pycU7sdvWiEI98CzE62P1",
+      "name": "Le bourgeois gentilhomme, LWV 43: XI. Marche pour la cérémonie des turcs",
+      "artists": [
+        { "id": "6Q4NsRQEXFrMdmttCcHhQO", "name": "Jean-Baptiste Lully" },
+        { "id": "1cLXHNqNXPWhTDeIt6EjbC", "name": "Le Concert Des Nations" },
+        { "id": "3JbLZOJHZ2wOWNPnQKcqeg", "name": "Jordi Savall" }
+      ],
+      "album": {
+        "id": "3nCsMvXFRRe1nMRVEyPtCK",
+        "name": "Lully: Le Bourgeois gentilhomme",
+        "release_date": "1998-01-01",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b273bc70145a62ede6aec8b25f8c", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 133706,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/4pycU7sdvWiEI98CzE62P1" }
+    },
+    {
+      "id": "5UO0mq9xiBiwwfA91u8YQn",
+      "uri": "spotify:track:5UO0mq9xiBiwwfA91u8YQn",
+      "name": "Marche pour la cérémonie des Turcs",
+      "artists": [
+        { "id": "6Q4NsRQEXFrMdmttCcHhQO", "name": "Jean-Baptiste Lully" },
+        { "id": "3JbLZOJHZ2wOWNPnQKcqeg", "name": "Jordi Savall" }
+      ],
+      "album": {
+        "id": "6VvBhAqvDwbCcJnPCUhqbq",
+        "name": "Tous les matins du monde",
+        "release_date": "1991-11-01",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b2730c3dee4b7d07ae63b5b5b6b5", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 139337,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/5UO0mq9xiBiwwfA91u8YQn" }
+    }
+  ],
+
+  "track:\"Baker Street\" artist:\"Gerry Rafferty\"": [
+    {
+      "id": "5gOd6zDC8vhlYjqbQdJVWP",
+      "uri": "spotify:track:5gOd6zDC8vhlYjqbQdJVWP",
+      "name": "Baker Street",
+      "artists": [{ "id": "0MyKkPBqDsrWLmxDgVKMWM", "name": "Gerry Rafferty" }],
+      "album": {
+        "id": "1XT1LTPvVJMEgFGKcUmCXY",
+        "name": "City to City",
+        "release_date": "1978",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b273e3f4b1c33f5e3d8b1e40b0f9", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 365626,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/5gOd6zDC8vhlYjqbQdJVWP" }
+    }
+  ],
+
+  "track:\"Haus am See\" artist:\"Peter Fox\"": [
+    {
+      "id": "4qcctSwC6l8BLc8n8e72X7",
+      "uri": "spotify:track:4qcctSwC6l8BLc8n8e72X7",
+      "name": "Haus am See",
+      "artists": [{ "id": "0OJRsximkTd5T2sSsxlSQP", "name": "Peter Fox" }],
+      "album": {
+        "id": "5Uc4TFfxOxQPFJhKDW8Kb0",
+        "name": "Stadtaffe (Deluxe Bundle)",
+        "release_date": "2008-09-26",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 214533,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/4qcctSwC6l8BLc8n8e72X7" }
+    }
+  ],
+
+  "_note_faux": "Les trois requêtes suivantes reproduisent le vrai piège : Spotify ne renvoie pas une liste vide pour un titre inventé, il renvoie d'autres morceaux du même artiste. Sans comparaison du titre, ces trois hallucinations passeraient.",
+
+  "track:\"Le Cri du Zinc\" artist:\"Booba\"": [],
+  "Booba Le Cri du Zinc": [
+    {
+      "id": "1zLbZlHTJZaBLQCJTdgCLC",
+      "uri": "spotify:track:1zLbZlHTJZaBLQCJTdgCLC",
+      "name": "Tallac",
+      "artists": [{ "id": "58wXmynHaAWI5hwlPZP3qL", "name": "Booba" }],
+      "album": {
+        "id": "4kJKlJ4Zc2xWXKUhVzRj3E",
+        "name": "Ouest Side",
+        "release_date": "2006-11-27",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b273a5b8f8c6e2e5a5b8d2b9c0a1", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 224000,
+      "explicit": true,
+      "external_urls": { "spotify": "https://open.spotify.com/track/1zLbZlHTJZaBLQCJTdgCLC" }
+    }
+  ],
+
+  "track:\"Nébuleuse Ferroviaire\" artist:\"Vitalic\"": [],
+  "Vitalic Nébuleuse Ferroviaire": [
+    {
+      "id": "6ts1l6eCcuCqHeNtjY0o9u",
+      "uri": "spotify:track:6ts1l6eCcuCqHeNtjY0o9u",
+      "name": "Poney Part 1",
+      "artists": [{ "id": "4M84umUNRbZy1mJleyyRM9", "name": "Vitalic" }],
+      "album": {
+        "id": "1kMSEjmYPZoZTaEfnPzOSg",
+        "name": "OK Cowboy",
+        "release_date": "2005-04-25",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b27399ef2aa79460e3a3267634ac", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 323000,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/6ts1l6eCcuCqHeNtjY0o9u" }
+    }
+  ],
+
+  "track:\"Sarabande pour les Machines Volantes\" artist:\"Jean-Baptiste Lully\"": [],
+  "Jean-Baptiste Lully Sarabande pour les Machines Volantes": [
+    {
+      "id": "5UO0mq9xiBiwwfA91u8YQn",
+      "uri": "spotify:track:5UO0mq9xiBiwwfA91u8YQn",
+      "name": "Marche pour la cérémonie des Turcs",
+      "artists": [
+        { "id": "6Q4NsRQEXFrMdmttCcHhQO", "name": "Jean-Baptiste Lully" },
+        { "id": "3JbLZOJHZ2wOWNPnQKcqeg", "name": "Jordi Savall" }
+      ],
+      "album": {
+        "id": "6VvBhAqvDwbCcJnPCUhqbq",
+        "name": "Tous les matins du monde",
+        "release_date": "1991-11-01",
+        "images": [{ "url": "https://i.scdn.co/image/ab67616d0000b2730c3dee4b7d07ae63b5b5b6b5", "width": 640, "height": 640 }]
+      },
+      "duration_ms": 139337,
+      "explicit": false,
+      "external_urls": { "spotify": "https://open.spotify.com/track/5UO0mq9xiBiwwfA91u8YQn" }
+    }
+  ]
+}
