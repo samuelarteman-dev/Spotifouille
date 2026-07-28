@@ -49,14 +49,14 @@ export function Carte({ trouvaille, verdict, dansLaPlatine, onReagir, onBasculer
 
   return (
     <article className="surface-carte remontee overflow-hidden">
-      <div className="flex gap-3 p-3">
+      <div className="flex items-start gap-3 p-3">
         {/* Pochette : jamais recadrée, jamais recouverte, jamais de logo dessus. */}
         <button
           type="button"
           onClick={basculerFiche}
           aria-expanded={depliee}
           aria-label={`${depliee ? 'Replier' : 'Déplier'} la fiche de ${titrePrincipal}`}
-          className="shrink-0 cursor-pointer transition-opacity hover:opacity-85"
+          className="flex shrink-0 cursor-pointer transition-opacity hover:opacity-85"
         >
           {image ? (
             <img

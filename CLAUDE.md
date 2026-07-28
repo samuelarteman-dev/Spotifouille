@@ -7,9 +7,11 @@ l'existence des morceaux et à écrire les playlists.
 ## Commandes
 
 - Build : `npm run build`
-- Dev : `npm run dev`
+- Dev : `npm run dev` (front seul) ou `netlify dev` (avec les fonctions)
 - Lint : `npm run lint`
-- Profil : `node scripts/build-profile.mjs`
+- Profil : `npm run profil`
+- Garde-fou : `npm run test:resolution` (ajoute `-- --direct` avec
+  `SPOTIFY_CLIENT_ID` et `SPOTIFY_CLIENT_SECRET` pour taper la vraie API)
 
 ## Stack
 
@@ -87,10 +89,28 @@ Transitions de 150 à 200 ms, sur l'opacité et la position uniquement.
 
 ## Modèles
 
-- Conversation et recommandations : `claude-sonnet-5`, max_tokens 1500
+- Conversation et recommandations : `claude-sonnet-5`, max_tokens 1500,
+  `thinking: {type: 'disabled'}` pour que les 1500 jetons aillent à la prose.
 - Fiches « pourquoi ce morceau » et réécriture du profil : `claude-haiku-4-5-20251001`,
-  max_tokens 400
-- Mise en cache du prompt activée sur le bloc statique (empreinte + profil).
+  max_tokens 400.
+- **Haiku 4.5 refuse `output_config.effort`**, ça déclenche une erreur. Ne
+  l'ajoute jamais dans `fiche.mts` ni `profil.mts`.
+- **Sonnet 5 refuse `temperature`, `top_p`, `top_k`** en valeur non par défaut.
+  Pour faire varier le ton, passe par le prompt.
+- Deux points de césure de cache : après l'empreinte, puis après le profil.
+  L'empreinte est importée dans `netlify/lib/prompt.mts`, pas envoyée par le
+  navigateur : c'est ce qui garantit un préfixe identique au bit près.
+
+## Architecture des fichiers
+
+- `netlify/lib/prompt.mts` : assemblage du prompt, validation des entrées
+- `netlify/lib/limite.mts` : 40 appels/heure/IP via Netlify Blobs
+- `src/lib/spotify/resolution.ts` : le garde-fou anti-hallucination
+- `src/lib/texte.ts` : normalisation. **Doit rester identique** à celle de
+  `scripts/build-profile.mjs`, sinon les clés de `bibliotheque.json` ne
+  correspondent plus à rien.
+- `scripts/resoudre-ts.mjs` : crochet de résolution pour les scripts de test,
+  Node exige des extensions explicites là où Vite non.
 
 ## Rédaction et microcopy (interface en français)
 

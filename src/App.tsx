@@ -285,17 +285,39 @@ export function App() {
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden">
-      <header className="flex shrink-0 items-center justify-between gap-2 border-b border-white/5 px-3 py-2">
-        <h1 className="text-lg leading-none font-black tracking-tighter uppercase">
-          Spoti<span className="text-accent">fouille</span>
-        </h1>
+      {/* Deux rangées sous 768 px : à une seule rangée, les onglets poussaient
+          « Nouvelle fouille » et les réglages hors de l'écran à 375 px. */}
+      <header className="shrink-0 border-b border-white/5 px-3 py-2">
+        <div className="flex items-center justify-between gap-2">
+          <h1 className="text-lg leading-none font-black tracking-tighter uppercase">
+            Spoti<span className="text-accent">fouille</span>
+          </h1>
 
-        <nav aria-label="Panneaux" className="flex gap-1 md:hidden">
+          <div className="flex shrink-0 items-center gap-1">
+            <button
+              type="button"
+              onClick={nouvelleFouille}
+              className="min-h-11 rounded-full px-3 text-[11px] font-bold tracking-wide text-texte-doux uppercase transition-opacity hover:text-texte"
+            >
+              Nouvelle fouille
+            </button>
+            <button
+              type="button"
+              onClick={() => setReglagesOuverts(true)}
+              aria-label="Ouvrir les réglages"
+              className="size-11 rounded-full text-texte-doux transition-opacity hover:text-texte"
+            >
+              <span aria-hidden="true">⚙</span>
+            </button>
+          </div>
+        </div>
+
+        <nav aria-label="Panneaux" className="mt-1 flex gap-1 md:hidden">
           <button
             type="button"
             onClick={() => setOnglet('conversation')}
             aria-current={onglet === 'conversation'}
-            className={`min-h-11 rounded-full px-3 text-[11px] font-bold tracking-wide uppercase ${
+            className={`min-h-11 flex-1 rounded-full px-3 text-[11px] font-bold tracking-wide uppercase ${
               onglet === 'conversation' ? 'bg-surface-haute text-texte' : 'text-texte-doux'
             }`}
           >
@@ -308,36 +330,18 @@ export function App() {
               setNouvelles(0)
             }}
             aria-current={onglet === 'platine'}
-            className={`relative min-h-11 rounded-full px-3 text-[11px] font-bold tracking-wide uppercase ${
+            className={`relative min-h-11 flex-1 rounded-full px-3 text-[11px] font-bold tracking-wide uppercase ${
               onglet === 'platine' ? 'bg-surface-haute text-texte' : 'text-texte-doux'
             }`}
           >
             Platine
             {nouvelles > 0 && onglet !== 'platine' ? (
-              <span className="absolute top-1 right-0 flex size-4 items-center justify-center rounded-full bg-accent text-[10px] font-bold text-fond tabular-nums">
+              <span className="absolute top-1 right-2 flex size-4 items-center justify-center rounded-full bg-accent text-[10px] font-bold text-fond tabular-nums">
                 {nouvelles}
               </span>
             ) : null}
           </button>
         </nav>
-
-        <div className="flex gap-1">
-          <button
-            type="button"
-            onClick={nouvelleFouille}
-            className="min-h-11 rounded-full px-3 text-[11px] font-bold tracking-wide text-texte-doux uppercase transition-opacity hover:text-texte"
-          >
-            Nouvelle fouille
-          </button>
-          <button
-            type="button"
-            onClick={() => setReglagesOuverts(true)}
-            aria-label="Ouvrir les réglages"
-            className="size-11 rounded-full text-texte-doux transition-opacity hover:text-texte"
-          >
-            <span aria-hidden="true">⚙</span>
-          </button>
-        </div>
       </header>
 
       {alerte ? (
